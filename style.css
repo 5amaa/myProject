@@ -1,0 +1,487 @@
+body{
+    /* background-color: rgb(246, 148, 148); */
+    background-color: rgb(215, 214, 214);
+    
+}
+/* -----------------------NavBar------------------ */
+
+.logo{
+    width: 70%;
+   
+    border-radius: 15px;
+    
+    
+}
+#header{
+    
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(238, 233, 233);
+    padding: 5px 20px;
+    box-shadow: 0px 5px 15px rgb(155, 153, 153) ;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+#navbar{
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0px 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3 ease;
+}
+#navbar li a:hover ,
+#navbar li a.home {
+    color: rgb(240, 127, 127);
+}
+#navbar li a.home::after,
+
+#navbar li a:hover::after
+{
+    content:"";
+    width: 30%;
+    height: 2px;
+    background: rgb(146, 127, 240);
+    
+    position: absolute;
+    bottom: -4px;
+    left: 30px;
+
+}
+
+.cart{
+    position: fixed;
+    top: 0;
+    /* right: 0; */
+    right: -100%;
+     margin-top: 85px; /*  --- */
+    width: 360px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+    background-color: rgb(186, 184, 184);
+    box-shadow: -2px solid 4px hsl(0 4% 15% /10%);
+    /* border: 1px solid rgb(77, 75, 75); */
+    border-radius:25px ;
+    transition: 1.5s;
+}
+
+.cart.active{
+    right: 0;
+    transition: .5s;
+}
+
+.cart-title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    
+} 
+.cart-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+  }
+
+.detail-box{
+    display: grid;
+    row-gap: .5rem;
+}
+
+.cart-product-title{ 
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.cart-price{
+    font-weight: 500;
+}
+
+.cart-quantity{
+    border: 1px solid rgb(133, 131, 131);
+    outline-color: rgb(88, 86, 86) ;
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.cart-remove{
+    font-size: 24px;
+    color: rgb(247, 52, 38);
+    cursor: pointer;
+
+}
+
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid rgb(130, 129, 129);
+}
+
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.total-price{
+    margin-left: .5rem;
+}
+
+.btn-buy{
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12PX 20px;
+    border: none;
+    background-color:rgb(130, 129, 129) ;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-buy:hover{
+    background-color: rgb(153, 153, 227);
+}
+
+#cart-close{
+      position: absolute;
+      top: 1rem;
+      right: .8rem;
+      font-size: 1rem;
+      color: rgb(97, 95, 95);
+      cursor: pointer;
+}
+
+
+/* -------------------SliderShow------------------- */
+
+.secondSection{
+    box-sizing: border-box;
+    
+}
+.mySlide{
+    display: none;
+   
+   
+}
+.mySlide img{
+    vertical-align: middle  ;
+    border-radius: 5%;
+
+
+}
+
+.sliderShow{
+max-width: 100%;
+
+position: relative;
+margin: auto;
+margin-top: 20px;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+.next{
+    right: 0;
+}
+.prev:hover, .next:hover{
+    background-color: rgb(134, 133, 133);
+}
+
+.number{
+    color: white;
+    font-size: 18px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+.mySlide{
+    -webkit-animation-name: mySlide;
+    -moz-animation-duration: 1.5s;
+    animation-name: mySlide;
+    animation-duration: 1.5s ;
+}
+
+@-webkit-keyframes mySlide{
+    from{opacity: .4;}
+    to{opacity: 1;}
+}
+@keyframes mySlide{
+    from{opacity: .4;}
+    to{opacity: 1;}
+}
+
+
+
+/* -------------------FilterElement------------------- */
+
+.filterElement {
+    background-color: rgb(238, 233, 233);
+    
+    justify-content: center;
+    display: flex;
+   
+}
+.btn{
+    margin: 50px ;
+    width: 100px;
+    border-radius: 25px;
+    border-color: rgb(148, 164, 241);
+}
+
+.btn:hover
+{
+    
+    
+    background: rgb(146, 127, 240);
+   
+}
+
+
+/* ------------------- filter style-------------------- */
+
+
+.clothes , .bags , .hats , .shoes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.clothes img , .bags img , .hats img , .shoes img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 0px;
+    border-radius: 25px;
+    
+}
+.clothes p , .bags p , .hats p , .shoes p{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    color: rgb(58, 58, 58);
+    font-weight: bold;
+    font-size: 16px;
+}
+.slideClothes , .slideBags ,.slideHats , .slideShoes{
+    position: relative;
+margin: 30px 50px;
+border-radius: 25px;
+padding-bottom: 50px;
+
+
+}
+.slideClothes:hover , .slideBags:hover ,.slideHats:hover , .slideShoes:hover{
+    border-radius: 25px;
+    border: 1px solid rgb(238, 233, 233);
+    transition: .4s;
+    background-color: rgb(238, 233, 233);
+    
+    }
+.clothes a , .bags a , .hats a , .shoes a{
+    display: flex;
+    justify-content: center;
+    
+}
+.clothes a img , .bags a img , .hats a img , .shoes a{
+border-radius: 30%;
+}
+.product-price{
+    font-weight: 500;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    
+}
+#cart-icon{color: rgb(132, 132, 198);cursor: pointer;}
+.add-cart{
+    position: absolute;
+   
+    right: 0;
+    
+    color: rgb(132, 132, 198);
+    padding: 10px;
+    cursor: pointer;
+
+}
+.add-cart:hover{
+background-color: rgb(129, 129, 225);
+background: 25px;
+
+}
+
+
+
+/* -------------------  brands style-------------------- */
+.brandtitle , .promotitle{
+    background-color: rgb(238, 233, 233);
+
+    justify-content: center;
+    display: flex;
+    padding: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    
+    
+}
+
+/* -----------brands------- */
+.brands {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+.brands img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 40px;
+    box-shadow: 0px 5px 15px rgb(114, 113, 113);
+}
+/* ---------------------------- */
+
+.fifthSection p
+{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 30px;
+    
+}
+.input
+{
+    justify-content: center;
+    display: flex;
+    
+    
+    
+}
+.fifthSection input{
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    width: 300px;
+    height: 50px;
+    border-radius: 20px;
+}
+.fifthSection button{
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    background-color:rgb(114, 113, 113) ;
+}
+
+.fifthSection button:hover{
+    background-color:rgb(183, 180, 180) 
+}
+#percent
+{
+    display: flex;
+    flex-direction: column;
+    margin: 5px ;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color:red;
+}
+/* ------------------footer-------------------- */
+.footer{
+    margin-top: 50px;
+    margin-bottom: 0;
+    background-color: rgb(238, 233, 233) ;
+    display: flex;
+    justify-content:space-between;
+    
+    
+   
+    
+}
+
+.info p{
+  
+  display: flex;
+ 
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  
+  color: rgb(58, 58, 58);
+
+  font-size: 16px;
+  font-weight: bold
+}
+
+
+.footer_icon{
+    width: 50px;
+    height: 50px;
+    /* padding-left: 10px; */
+    border-radius: 50%;
+    color: rgb(58, 58, 58);
+    display: flex;
+    /* justify-content: baseline; */
+    margin: 20px;
+    cursor: pointer;
+}
+
+
+/* ---------------------------------- */
+#top {
+    position: sticky;
+    bottom: 0;
+    right:0;
+   
+    z-index: 999;
+    width: 50px;
+    height: 50px;
+    
+    border-radius: 70%;
+    opacity: 0.5;
+  }
+
+
+
+
+  /* ------------------------------------------------------------------------------ */
+

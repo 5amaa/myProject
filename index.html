@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"  />
+    <title>samaShop</title>
+</head>
+
+
+
+<body>
+   
+    <section id="header">
+        <div>
+            <a href="#"><img src="./imgs/logo2.jpg" class="logo"></a>
+        </div>
+
+        <div>
+            <ul id="navbar">
+                <li><a class="home" href="index.html">Home</a></li>
+                <li><a class="about" href="about.html">about</a></li>
+                <li><a class="contact" href="contact.html">contact</a></li>
+                <!-- <li><a  href="cart.html"><img src="./imgs/cart.jpg" class="cart-ti"></a></li> -->
+                
+            </ul>
+            
+        </div>
+        <i id="cart-icon"class="fa-solid fa-cart-arrow-down fa-xl " ></i>
+        <div class="cart">
+            <h2 class="cart-title">Your Cart</h2>
+
+            <div class="cart-content">
+                
+                
+
+
+
+            </div>
+                
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
+            </div>
+
+            <button type="button"class="btn-buy">Buy Now</button>
+            
+            <i class="fa-solid fa-x" id="cart-close"></i>
+
+        </div>
+
+
+
+
+        </div>
+    </section>
+<section class="secondSection">
+    <div class="sliderShow">
+        <div class="mySlide">
+            <div class="number">1/6</div>
+            <img style="width: 100%; height: 500px ;" src="./imgs/all11.jpg">
+            
+            </div>
+
+        <div class="mySlide">
+            <div class="number">2/6</div>
+            <img style="width: 100%; height: 500px ;"src="./imgs/all1.jpg">
+            
+        </div>
+
+        <div class="mySlide">
+            <div class="number">3/6</div>
+            <img style="width: 100%; height: 500px;" src="./imgs/all4.jpg">
+            
+        </div>
+
+        <div class="mySlide">
+            <div class="number">4/6</div>
+            <img style="width: 100%; height: 500px ;" src="./imgs/all2.jpg">
+            
+            </div>
+
+        <div class="mySlide">
+            <div class="number">5/6</div>
+            <img style="width: 100%;height: 500px;" src="./imgs/all7.jpg">
+           
+        </div>
+
+        <div class="mySlide">
+            <div class="number">6/6</div>
+            <img style="width: 100%; height: 500px ;" src="./imgs/all6.jpg">
+            
+        </div>
+
+        <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlide(1)">&#10095;</a>
+    </div>
+    <br> 
+   
+</section>
+
+<section class="thirdSection">
+
+    <div class="filterElement">
+        <!-- <ul>
+            <li>Clothes</li>
+            <li>Bags</li>
+            <li>Shoes</li>
+
+
+        </ul> -->
+        <button onclick="showClothes()"  class="btn">Clothes</button>
+        <button onclick="showBags()" class="btn">Bags</button>
+        <button onclick="showShoes()" class="btn">Shoes</button>
+        <button onclick="showHats()" class="btn">Hats</button>
+    </div>
+
+    <div class="clothes">
+        <div class="slideClothes">
+            <img class="slider-img" src="./imgs/clothes/1.jpg">
+            <p class="product-title">Green pants</p>
+            <span class="product-price">$70</span>
+            
+            <i class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+           
+        </div>
+        <div class="slideClothes">
+            <img class="slider-img" src="./imgs/clothes/imag.jpg">
+            <p class="product-title">Black pants</p>
+            <span class="product-price">$80</span>
+            <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+           
+        </div>
+        
+        <div class="slideClothes">
+            <img class="slider-img" src="./imgs/clothes/imag2.jpg">
+            <p class="product-title">Child pants</p>
+            <span class="product-price">180</span>
+            <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+        </div>
+
+        <div class="slideClothes">
+            <img class="slider-img" src="./imgs/clothes/images.jpg">
+            <p class="product-title">Cream formalPants</p>
+            <span class="product-price">$200</span>
+            <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+        </div>
+
+        <div class="slideClothes">
+            <img class="slider-img" src="./imgs/clothes/Li.jpg">
+            <p class="product-title">mintGreen Pants</p>
+            <span class="product-price">$300</span>
+            <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+        </div>
+
+        <div class="slideClothes">
+            <img class="slider-img" src="./imgs/clothes/cas.jpg">
+            <p class="product-title">Cream pants</p>
+            <span class="product-price">$70</span>
+            <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+        </div>
+
+        <div class="slideClothes">
+            <img class="slider-img" src="./imgs/clothes/spor.jpg">
+            <p class="product-title">Adidas pants</p>
+            <span class="product-price">$300</span>
+            <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+        </div>
+
+        <div class="slideClothes">
+            <img class="slider-img" src="./imgs/clothes/w1.jpg">
+            <p class="product-title">white blouse</p>
+            <span class="product-price">$350</span>
+            <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+        </div>
+
+        <div class="slideClothes">
+            <img class="slider-img" src="./imgs/clothes/b1.jpg">
+            <p class="product-title">Gray blouse</p>
+            <span class="product-price">$170</span>
+            <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+        </div>
+
+        <div class="slideClothes">
+            <img class="slider-img" src="./imgs/clothes/bl1.jpg">
+            <p class="product-title">light Green blouse</p>
+            <span class="product-price">$250</span>
+            <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+        </div>
+        
+        <div class="slideClothes">
+            <img class="slider-img" src="./imgs/clothes/bl2.jpg">
+            <p class="product-title">Green blouse</p>
+            <span class="product-price">$350</span>
+            <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+        </div>
+        
+
+        <div class="slideClothes">
+            <img class="slider-img" src="./imgs/clothes/bl3.jpg">
+            <p class="product-title">Cream blouse</p>
+            <span class="product-price">$350</span>
+            <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+        </div>
+
+        <div class="slideClothes">
+            <img class="slider-img" src="./imgs/clothes/bl4.jpg">
+            <p class="product-title">white blouse</p>
+            <span class="product-price">$350</span>
+            <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+        </div>
+
+        <div class="slideClothes">
+            <img class="slider-img" src="./imgs/clothes/d1.jpg">
+            <p class="product-title">Flowers dress</p>
+            <span class="product-price">$850</span>
+            <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+        </div>
+
+        <div class="slideClothes">
+            <img class="slider-img"src="./imgs/clothes/d2.jpg">
+            <p class="product-title">Blue dress</p>
+            <span class="product-price">$650</span>
+            <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+
+<!-- bags -->
+<div class="bags">
+    <div class="slideBags">
+        <img class="slider-img" src="./imgs/bags/b1.jpg">
+        <p class="product-title">Pink Bag</p>
+        <span class="product-price">$250</span>
+        <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+    </div>
+    <div class="slideBags">
+        <img class="slider-img" src="./imgs/bags/b2.jpg">
+        <p class="product-title">Red Bag</p>
+        <span class="product-price">$250</span>
+        <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+    </div>
+    
+    <div class="slideBags">
+        <img class="slider-img" src="./imgs/bags/b3.jpg">
+        <p class="product-title">Black Bag</p>
+        <span class="product-price">$350</span>
+        <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+    </div>
+
+    <div class="slideBags">
+        <img class="slider-img" src="./imgs/bags/b4.jpg">
+        <p class="product-title">Brown Bag</p>
+        <span class="product-price">$150</span>
+        <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+    </div>
+
+    <div class="slideBags">
+        <img class="slider-img" src="./imgs/bags/b5.jpg">
+        <p class="product-title">Green Bag</p>
+        <span class="product-price">$350</span>
+        <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+    </div>
+
+    <div class="slideBags">
+        <img class="slider-img" src="./imgs/bags/b6.jpg">
+        <p class="product-title">Brown Bag</p>
+        <span class="product-price">$150</span>
+        <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+    </div>
+
+    <div class="slideBags">
+        <img class="slider-img" src="./imgs/bags/b7.jpg">
+        <p class="product-title">white Bag</p>
+        <span class="product-price">$150</span>
+        <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+    </div>
+
+    <div class="slideBags">
+        <img class="slider-img" src="./imgs/bags/b8.jpg">
+        <p class="product-title">Gray Bag</p>
+        <span class="product-price">$450</span>
+        <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+    </div>
+
+    <div class="slideBags">
+        <img class="slider-img" src="./imgs/bags/b9.jpg">
+        <p class="product-title">Sport Bag</p>
+        <span class="product-price">$300</span>
+        <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+    </div>
+
+    <div class="slideBags">
+        <img class="slider-img" src="./imgs/bags/b11.jpg">
+        <p class="product-title">Lap Bag</p>
+        <span class="product-price">$400</span>
+        <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+    </div>
+    
+    </div>
+    
+    <div class="hats">
+        
+            <div class="slideHats">
+                <img class="slider-img" src="./imgs/hats/h1.jpg">
+                <p class="product-title">Brown Hat</p>
+                <span class="product-price">$100</span>
+                <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+            </div>
+            <div class="slideHats">
+                <img class="slider-img" src="./imgs/Hats/h2.jpg">
+                <p class="product-title">Brown Hat</p>
+                <span class="product-price">$100</span>
+                <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+            </div>
+            
+            <div class="slideHats">
+                <img class="slider-img"  src="./imgs/hats/h3.jpg">
+                <p class="product-title">Offwhite Hat</p>
+                <span class="product-price">$150</span>
+                <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+            </div>
+        
+            <div class="slideHats">
+                <img class="slider-img" src="./imgs/hats/h4.jpg">
+                <p class="product-title">Purple Hat</p>
+                <span class="product-price">$100</span>
+                <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+            </div>
+        
+            <div class="slideHats">
+                <img class="slider-img" src="./imgs/hats/h5.jpg">
+                <p class="product-title">Gray Hat</p>
+                <span class="product-price">$100</span>
+                <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+            </div>
+        
+            <div class="slideHats">
+                <img class="slider-img" src="./imgs/hats/h9.jpg">
+                <p class="product-title">white Hat</p>
+                <span class="product-price">$100</span>
+                <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+            </div>
+        
+            <div class="slideHats">
+                <img class="slider-img" src="./imgs/hats/h7.jpg">
+                <p class="product-title">Black Hat</p>
+                <span class="product-price">$150</span>
+                <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+            </div>
+        
+            <div class="slideHats">
+                <img class="slider-img" src="./imgs/hats/h8.jpg">
+                <p class="product-title">Classy Hat</p>
+                <span class="product-price">$200</span>
+                <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+            </div>
+        
+            <div class="slideHats">
+                <img class="slider-img" src="./imgs/hats/h6.jpg">
+                <p class="product-title">Gray Hat</p>
+                <span class="product-price">$150</span>
+                <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+            </div>
+        
+            <div class="slideHats">
+                <img class="slider-img" src="./imgs/hats/h11.jpg">
+                <p class="product-title">Pink Hat</p>
+                <span class="product-price">$200</span>
+                <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+            </div>
+        </div>
+
+
+        <div class="shoes">
+        
+            <div class="slideShoes">
+                <img class="slider-img" src="./imgs/shoes/e1.jpg">
+                <p class="product-title">sneakers </p>
+                <span class="product-price">$200</span>
+                <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+            </div>
+            <div class="slideShoes">
+                <img class="slider-img" src="./imgs/shoes/e2.jpg">
+                <p class="product-title">Brown Shoes </p>
+                <span class="product-price">$200</span>
+                <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+            </div>
+            
+            <div class="slideShoes">
+                <img class="slider-img" src="./imgs/shoes/e3.jpg">
+                <p class="product-title">Blue Shoes </p>
+                <span class="product-price">$300</span>
+                <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+            </div>
+        
+            <div class="slideShoes">
+                <img class="slider-img" src="./imgs/shoes/e4.jpg">
+                <p class="product-title">Black Shoes </p>
+                <span class="product-price">$500</span>
+                <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+            </div>
+        
+            <div class="slideShoes">
+                <img class="slider-img" src="./imgs/shoes/e55.jpg">
+                <p class="product-title">Pink Shoes </p>
+                <span class="product-price">$400</span>
+                <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+            </div>
+        
+            <div class="slideShoes">
+                <img class="slider-img" src="./imgs/shoes/e6.jpg">
+                <p class="product-title">Creamy Shoes </p>
+                <span class="product-price">$450</span>
+                <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+            </div>
+        
+            <div class="slideShoes">
+                <img class="slider-img" src="./imgs/shoes/e7.jpg">
+                <p class="product-title">Gold Shoes </p>
+                <span class="product-price">$450</span>
+                <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+            </div>
+        
+            <div class="slideShoes">
+                <img class="slider-img" src="./imgs/shoes/e8.jpg">
+                <p class="product-title">Black Shoes </p>
+                <span class="product-price">$350</span>
+                <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+            </div>
+        
+            <div class="slideShoes">
+                <img class="slider-img" src="./imgs/shoes/e9.jpg">
+                <p class="product-title">Red Shoes </p>
+                <span class="product-price">$400</span>
+                <i  class="fa-solid fa-cart-arrow-down fa-xl add-cart" ></i>
+            </div>
+        
+          
+        </div>
+
+
+    </div>
+</section>
+
+<section class="fourthSection">
+<div class="brandtitle">Our Brands</div>
+<div class="brands">
+    <img src="./imgs/brands/f1.jpeg">
+    <img src="./imgs/brands/f2.jpeg">
+    <img src="./imgs/brands/f3.jpeg">
+    <img src="./imgs/brands/f4.jpeg">
+    <img src="./imgs/brands/f5.jpeg">
+    <img src="./imgs/brands/f6.jpeg">
+</div>
+
+
+
+
+
+
+</section>
+
+<section class="fifthSection">
+<div class="promotitle"> Get your promo code</div>
+<p>Subscribe now and win <span id="percent">10% off</span>  on your 1st purchase. Also get private access to sales , news and experiences</p>
+<div class="input"><input placeholder="example@gmail.com">
+<button>Subscribe</button>
+</div>
+
+
+
+</section>
+
+<a href="./index.html"><img id ="top" src="./imgs/top.jpeg" ></a>
+
+<section class="footer">
+    <div class="info">
+        
+        <p> sama'Shop
+            <br>Office: 12 Maadi, Cairo 
+            <br> Phone: 01204753885 
+            <br> Email: friend@gmail.com
+            
+        </p>
+
+    </div>
+    <div class="link">
+        <a href="https://www.facebook.com/"><i  class="fa-brands fa-facebook footer_icon"></i></a>
+        <a href="https://wa.me/2001204753885?text= hi here sama's Shop"><i  class="fa-brands fa-whatsapp footer_icon"></i></a>
+        <i  class="fa-brands fa-instagram footer_icon"></i>
+        <a href="mailto: samaaashraf113@gmail.com" ><i class="fa-regular fa-envelope footer_icon"></i></a>
+        <a ><i  class="fa-brands fa-twitter footer_icon"></i></a>
+</div>
+
+</section>
+
+
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

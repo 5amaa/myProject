@@ -1,0 +1,136 @@
+body{
+    /* background-color: rgb(246, 148, 148); */
+    background-color: rgb(215, 214, 214);
+    
+}
+/* -----------------------NavBar------------------ */
+.cart{
+    width: 50px;
+    border-radius: 50%;
+}
+.logo{
+    width: 70%;
+   
+    border-radius: 15px;
+    
+    
+}
+#header{
+    
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(238, 233, 233);
+    padding: 5px 20px;
+    box-shadow: 0px 5px 15px rgb(155, 153, 153) ;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+#navbar{
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0px 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3 ease;
+}
+#navbar li a:hover ,
+#navbar li a.about {
+    color: rgb(240, 127, 127);
+}
+#navbar li a.about::after,
+#navbar li a:hover::after
+{
+    content:"";
+    width: 30%;
+    height: 2px;
+    background: rgb(146, 127, 240);
+    
+    position: absolute;
+    bottom: -4px;
+    left: 30px;
+
+}
+
+
+/* ----------------h2-------------- */
+h2{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    color: rgb(114, 113, 113);
+    font-weight: bold;
+    font-size: 50px;
+}
+.frist{
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+.frist p{
+    width: 50%;
+    display: inline-flex;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    
+    color: rgb(58, 58, 58);
+   
+    font-size: 20px;
+}
+.frist image{
+    width: 50%;
+    margin: 100px;
+}
+
+/* -------------------------------------- */
+.footer{
+    margin-top: 50px;
+    margin-bottom: 0;
+    background-color: rgb(238, 233, 233) ;
+    display: flex;
+    justify-content:space-between;
+    
+    
+   
+    
+}
+
+.info p{
+  
+  display: flex;
+ 
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  
+  color: rgb(58, 58, 58);
+
+  font-size: 16px;
+  font-weight: bold
+}
+
+.footer_icon{
+    width: 50px;
+    height: 50px;
+    /* padding-left: 10px; */
+    border-radius: 50%;
+    color: rgb(58, 58, 58);
+    display: flex;
+    /* justify-content: baseline; */
+    margin: 20px;
+    cursor: pointer;
+}
